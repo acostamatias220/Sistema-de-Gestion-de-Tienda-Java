@@ -1,18 +1,30 @@
-## Getting Started
+# Sistema de Gestión de Tienda — Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Aplicación de consola desarrollada en Java que permite administrar el inventario y pedidos de una tienda de forma interactiva.
 
-## Folder Structure
+## Tecnologías
 
-The workspace contains two folders by default, where:
+- Java 17
+- POO — herencia, encapsulamiento, excepciones personalizadas
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Funcionalidades
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Agregar productos genéricos, comidas y bebidas
+- Listar y buscar productos por nombre o ID
+- Actualizar precio y stock
+- Eliminar productos con confirmación
+- Crear y listar pedidos
+- Validaciones de stock insuficiente con excepciones personalizadas
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Estructura del proyecto
+src/
+└── com/techlab/
+├── productos/       # Producto, Comida, Bebida
+├── servicios/       # ProductoService, PedidoService
+├── pedidos/         # Pedido, LineaPedido
+├── excepciones/     # StockInsuficienteException
+└── Main.java
 
-## Dependency Management
+## Cómo ejecutar
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Abrí el proyecto en VS Code o IntelliJ y ejecutá `Main.java`.
